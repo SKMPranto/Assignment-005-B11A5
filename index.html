@@ -40,7 +40,7 @@
     <!-- Header Part -->
     <header class="xl:w-[80%] mx-auto mb-5">
       <nav
-        class="w-[100%] p-3 rounded-xl bg-white flex justify-between items-center"
+        class="w-[100%] p-3 rounded-xl bg-white flex justify-between items-center shadow-md"
       >
         <!-- logo and name part -->
         <div class="flex items-center gap-3">
@@ -67,45 +67,56 @@
     </header>
     <!-- Main Part -->
     <main class="xl:w-[80%] mx-auto bg-white rounded-xl">
-        <!-- Task-bar and task-box section -->
-        <section class="p-3 w-[1146px]">
-            <!-- Task-bar Container -->
-            <div class="p-5 flex justify-arounditems-center gap-3">
-                <!-- Task counter box -->
-                <div class="w-[263px] rounded-xl bg-slate-100 p-9 flex items-center gap-3">
-                        <div class="w-14 h-14 p-2 rounded-[100%] bg-white">
-                            <input
-                            type="checkbox"
-                            checked="checked"
-                            class="w-10 h-6 accent-[#3752FD] mt-2"
-                          />
-                        </div>
-                        <div>
-                            <p class="text-slate-500">Task Assigned</p>
-                            <h1 class="text-2xl font-bold">06</h1>
-                        </div>
-                </div>
-                <!-- Discover box -->
-                <div id="discoverBox" class="btn w-[524px] h-[128px] rounded-xl bg-gradient-to-r from-blue-800 to-blue-400 p-5 flex justify-evenly items-center hover:scale-[1.02] duration-300 ease-in-out">
-                    <img src="./assets/board.png" alt="Image">
-                    <p class="text-2xl font-bold text-white">Discover Something <br> New Today!</p>
-                </div>
-                <!-- Date box -->
-                <div class="w-[263px] rounded-xl bg-slate-100 p-9 flex items-center gap-3">
-                    <div class="">
-                        <img src="./assets/calender.png" alt="Image">
-                    </div>
-                    <div>
-                        <p class="text-slate-500">Task Assigned</p>
-                        <h1 class="text-2xl font-bold">06</h1>
-                    </div>
+      <!-- Task-bar and task-box section -->
+      <section class="p-3 w-[1146px]">
+        <!-- Task-bar Container -->
+        <div class="p-5 flex justify-arounditems-center gap-3">
+          <!-- Task counter box -->
+          <div
+            class="w-[263px] rounded-xl bg-slate-100 p-9 flex items-center gap-3"
+          >
+            <div class="w-14 h-14 p-2 rounded-[100%] bg-white">
+              <input
+                type="checkbox"
+                checked="checked"
+                class="w-10 h-6 accent-[#3752FD] mt-2"
+              />
             </div>
+            <div>
+              <p class="text-slate-500">Task Assigned</p>
+              <h1 class="text-2xl font-bold">06</h1>
             </div>
-        </section>
-
+          </div>
+          <!-- Discover box -->
+          <div
+            id="discoverBox"
+            class="btn w-[524px] h-[128px] rounded-xl bg-gradient-to-r from-blue-800 to-blue-400 p-5 flex justify-evenly items-center hover:scale-[1.02] duration-300 ease-in-out"
+          >
+            <img src="./assets/board.png" alt="Image" />
+            <p class="text-2xl font-bold text-white">
+              Discover Something <br />
+              New Today!
+            </p>
+          </div>
+          <!-- Date box -->
+          <div
+            class="w-[263px] rounded-xl bg-slate-100 p-9 flex items-center gap-3"
+          >
+            <div class="">
+              <img src="./assets/calender.png" alt="Image" />
+            </div>
+            <div>
+              <p class="text-slate-500">Task Assigned</p>
+              <h1 class="text-2xl font-bold">06</h1>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="./scriptFiles/utilities.js"></script>
     <script src="./scriptFiles/themeChenger.js"></script>
+    <script src="./scriptFiles/indexToBlog.js"></script>
+    <script src="./scriptFiles/blogToIndex.js"></script>
   </body>
 </html>

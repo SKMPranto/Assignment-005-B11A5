@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev Board</title>
+    <title>Blog</title>
     <!-- Daisy UI cdn link -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
@@ -36,7 +36,140 @@
       }
     </style>
   </head>
-  <body>
-    
+  <body class="primary-BGcolor py-4">
+    <!-- Header section -->
+    <header class="xl:w-[80%] mx-auto mb-5">
+      <nav
+        class="w-[100%] p-3 rounded-xl bg-white flex justify-between items-center shadow-md"
+      >
+        <!-- logo and name part -->
+        <div class="flex items-center gap-3">
+          <img src="./assets/logo.png" alt="Image" />
+          <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+        </div>
+        <!-- Back to Desk button -->
+        <button
+          id="btnBackToDesk"
+          class="btn bg-indigo-700 text-lg text-white hover:bg-indigo-800"
+        >
+          Back to Desk
+        </button>
+      </nav>
+    </header>
+    <!-- Main Section -->
+    <main>
+      <!-- Title section -->
+      <section class="xl:w-[80%] mx-auto mb-5">
+        <h1 class="text-3xl font-bold text-center">Blogs</h1>
+      </section>
+      <!-- Question No 1 box -->
+      <section class="xl:w-[80%] mx-auto mb-5 rounded-xl bg-white p-3">
+        <h3 class="font-bold text-xl">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </h3>
+        <br />
+        <p class="font-bold">
+          There are many built in methods in JavaScript to select an element in
+          the DOM .
+        </p>
+        <ul class="list-disc ml-5 text-slate-600">
+          <li>By ID => <span class="font-bold">getElementById()</span></li>
+          <li>
+            By Class Name =>
+            <span class="font-bold">getElementsByClassName()</span>
+          </li>
+          <li>
+            By Tag Name => <span class="font-bold">getElementsByTagName()</span>
+          </li>
+          <li>
+            Query Selector => <span class="font-bold">querySelector()</span>
+          </li>
+          <li>
+            Query Selector All =>
+            <span class="font-bold">querySelectorAll()</span>
+          </li>
+        </ul>
+      </section>
+      <!-- Question No 2 box -->
+      <section class="xl:w-[80%] mx-auto mb-5 rounded-xl bg-white p-3">
+        <h3 class="font-bold text-xl">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </h3>
+        <br />
+        <p class="font-bold">
+          The main difference between innerHTML, innerText and textContent is ->
+        </p>
+        <p class="text-slate-600">
+          <span class="font-bold">"innerHTML"</span> can contain the complete
+          HTML content within an element, while
+          <span class="font-bold">"innerText"</span> can contain only the
+          visible text content of an element and
+          <span class="font-bold">""textContent""</span> can contain all the
+          text of an element ,including hidden text and whitespace, but also
+          ignoring HTML tags.
+        </p>
+      </section>
+      <!-- Question No 3 box -->
+      <section class="xl:w-[80%] mx-auto mb-5 rounded-xl bg-white p-3">
+        <h3 class="font-bold text-xl">
+          Question-3: What is event delegation in the DOM?
+        </h3>
+        <br />
+        <p class="text-slate-600">
+          In DOM : <br />
+          "Event delegation" is a technique in JavaScript where programmer can
+          <span class="font-bold">
+            add a single event listener to a parent element </span
+          >instead of multiple listeners to child elements .
+        </p>
+      </section>
+      <!-- Question No 4 box -->
+      <section class="xl:w-[80%] mx-auto mb-5 rounded-xl bg-white p-3">
+        <h3 class="font-bold text-xl">
+          Question-4: What is event bubbling in the DOM?
+        </h3>
+        <br />
+        <p class="text-slate-600">
+          Event bubbling in JavaScript is a mechanism in the DOM where an event
+          <span class="font-bold">starts from the target elements </span> and
+          then propagates (bubbles) upward through its ancestors .
+        </p>
+      </section>
+      <!-- Question No 1 box -->
+      <section class="xl:w-[80%] mx-auto mb-5 rounded-xl bg-white p-3">
+        <h3 class="font-bold text-xl">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </h3>
+        <br />
+        <p class="font-bold">
+          There are many built in methods in JavaScript to create, add adn
+          remove elements dynamically in the DOM .
+        </p>
+        <ul class="list-disc ml-5 text-slate-600">
+          <li>
+            By using <span class="font-bold">document.createElement()</span> -
+            method we can create new elements
+          </li>
+          <li>
+            By using
+            <span class="font-bold"
+              >appendChils(), append(), prepend(), insertBefore(),
+              innerHTML()</span
+            >
+            - methods are used to generate or add elements
+          </li>
+          <li>
+            By using <span class="font-bold">removeChild(), remove()</span> -
+            methods are used to remove elements
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="./scriptFiles/utilities.js"></script>
+    <script src="./scriptFiles/indexToBlog.js"></script>
+    <script src="./scriptFiles/blogToIndex.js"></script>
   </body>
 </html>
