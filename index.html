@@ -27,6 +27,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/cb963199a9.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       * {
         font-family: "Poppins", sans-serif;
@@ -66,152 +71,227 @@
       </nav>
     </header>
     <!-- Main Part -->
-    <main class="xl:w-[80%] mx-auto bg-white rounded-xl">
+    <main class="xl:w-[80%] mx-auto">
       <!-- main section -->
-      <section>
+      <section class="flex gap-5">
         <!-- Left side section -->
-        <section>
-      <!-- Task-bar and task-box section -->
-      <section class="p-3 w-[1146px] border-b-2 border-dashed border-gray-400">
-        <!-- Task-bar Container -->
-        <div class="p-5 flex justify-arounditems-center gap-3">
-          <!-- Task counter box -->
-          <div
-            class="w-[263px] rounded-xl bg-slate-100 p-9 flex items-center gap-3"
+        <section class="w-[1150px] h-[918px] bg-white rounded-2xl">
+          <!-- Task-bar and task-box section -->
+          <section
+            class="p-3 w-[1146px] border-b-2 border-dashed border-gray-400"
           >
-            <div class="w-14 h-14 p-2 rounded-[100%] bg-white">
-              <input
-                type="checkbox"
-                checked="checked"
-                class="w-10 h-6 accent-[#3752FD] mt-2"
-              />
-            </div>
-            <div>
-              <p class="text-slate-500">Task Assigned</p>
-              <h1 class="text-2xl font-bold">06</h1>
-            </div>
-          </div>
-          <!-- Discover box -->
-          <div
-            id="discoverBox"
-            class="btn w-[524px] h-[128px] rounded-xl bg-gradient-to-r from-blue-800 to-blue-400 p-5 flex justify-evenly items-center hover:scale-[1.02] duration-300 ease-in-out"
-          >
-            <img src="./assets/board.png" alt="Image" />
-            <p class="text-2xl font-bold text-white">
-              Discover Something <br />
-              New Today!
-            </p>
-          </div>
-          <!-- Date box -->
-          <div
-            class="w-[263px] rounded-xl bg-slate-100 p-9 flex items-center gap-3"
-          >
-            <div class="">
-              <img src="./assets/calender.png" alt="Image" />
-            </div>
-            <div id="dateBox">
-              <div id="currentWeekday" class="text-xl font-bold"></div>
-              <div id="currentDate" class="text-xl font-extrabold"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Task card container -->
-        <section class="p-5 w-[1146px] grid grid-cols-3 gap-5">
-          <!-- Card No 1 -->
-          <div class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md">
-            <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">ShopEase</h4>
-            <h2 class="py-3 font-bold text-xl">Fix Mobile Button Issue </h2>
-            <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">Debug using Chrome DevTools, check for overlapping...</p>
-            <hr class="border-b-1 border-dashed border-slate-400">
-            <div class="flex justify-between items-center mt-5">
-              <div>
-                <h5 class="text-gray-400">Deadline</h5>
-                <h3 class="font-bold ">21 March 2025</h3>
+            <!-- Task-bar Container -->
+            <div class="p-5 flex justify-arounditems-center gap-3">
+              <!-- Task counter box -->
+              <div
+                class="w-[263px] rounded-xl bg-slate-100 p-9 flex items-center gap-3"
+              >
+                <div class="w-14 h-14 p-2 rounded-[100%] bg-white">
+                  <input
+                    type="checkbox"
+                    checked="checked"
+                    class="w-10 h-6 accent-[#3752FD] mt-2"
+                  />
+                </div>
+                <div>
+                  <p class="text-slate-500">Task Assigned</p>
+                  <h1 class="text-2xl font-bold">06</h1>
+                </div>
               </div>
-              <button class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold">Completed</button>
-            </div>
-  
-          </div>
-          <!-- Card No 2 -->
-          <div class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md">
-            <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">ShopEase</h4>
-            <h2 class="py-3 font-bold text-xl">Fix Mobile Button Issue </h2>
-            <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">Debug using Chrome DevTools, check for overlapping...</p>
-            <hr class="border-b-1 border-dashed border-slate-400">
-            <div class="flex justify-between items-center mt-5">
-              <div>
-                <h5 class="text-gray-400">Deadline</h5>
-                <h3 class="font-bold ">21 March 2025</h3>
+              <!-- Discover box -->
+              <div
+                id="discoverBox"
+                class="btn w-[524px] h-[128px] rounded-xl bg-gradient-to-r from-blue-800 to-blue-400 p-5 flex justify-evenly items-center hover:scale-[1.02] duration-300 ease-in-out"
+              >
+                <img src="./assets/board.png" alt="Image" />
+                <p class="text-2xl font-bold text-white">
+                  Discover Something <br />
+                  New Today!
+                </p>
               </div>
-              <button class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold">Completed</button>
-            </div>
-  
-          </div>
-          <!-- Card No 3 -->
-          <div class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md">
-            <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">ShopEase</h4>
-            <h2 class="py-3 font-bold text-xl">Fix Mobile Button Issue </h2>
-            <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">Debug using Chrome DevTools, check for overlapping...</p>
-            <hr class="border-b-1 border-dashed border-slate-400">
-            <div class="flex justify-between items-center mt-5">
-              <div>
-                <h5 class="text-gray-400">Deadline</h5>
-                <h3 class="font-bold ">21 March 2025</h3>
+              <!-- Date box -->
+              <div
+                class="w-[263px] rounded-xl bg-slate-100 p-9 flex items-center gap-3"
+              >
+                <div class="">
+                  <img src="./assets/calender.png" alt="Image" />
+                </div>
+                <div id="dateBox">
+                  <div id="currentWeekday" class="text-xl font-semibold"></div>
+                  <div id="currentDate" class="text-xl font-extrabold"></div>
+                </div>
               </div>
-              <button class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold">Completed</button>
             </div>
-  
-          </div>
-          <!-- Card No 4 -->
-          <div class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md">
-            <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">ShopEase</h4>
-            <h2 class="py-3 font-bold text-xl">Fix Mobile Button Issue </h2>
-            <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">Debug using Chrome DevTools, check for overlapping...</p>
-            <hr class="border-b-1 border-dashed border-slate-400">
-            <div class="flex justify-between items-center mt-5">
-              <div>
-                <h5 class="text-gray-400">Deadline</h5>
-                <h3 class="font-bold ">21 March 2025</h3>
+          </section>
+          <!-- Task card container -->
+          <section class="p-5 w-[1146px] grid grid-cols-3 gap-5">
+            <!-- Card No 1 -->
+            <div
+              class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md"
+            >
+              <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">
+                ShopEase
+              </h4>
+              <h2 class="py-3 font-bold text-xl">Fix Mobile Button Issue</h2>
+              <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">
+                Debug using Chrome DevTools, check for overlapping...
+              </p>
+              <hr class="border-b-1 border-dashed border-slate-400" />
+              <div class="flex justify-between items-center mt-5">
+                <div>
+                  <h5 class="text-gray-400">Deadline</h5>
+                  <h3 class="font-bold">21 March 2025</h3>
+                </div>
+                <button
+                  class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold"
+                >
+                  Completed
+                </button>
               </div>
-              <button class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold">Completed</button>
             </div>
-  
-          </div>
-          <!-- Card No 5 -->
-          <div class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md">
-            <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">ShopEase</h4>
-            <h2 class="py-3 font-bold text-xl">Fix Mobile Button Issue </h2>
-            <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">Debug using Chrome DevTools, check for overlapping...</p>
-            <hr class="border-b-1 border-dashed border-slate-400">
-            <div class="flex justify-between items-center mt-5">
-              <div>
-                <h5 class="text-gray-400">Deadline</h5>
-                <h3 class="font-bold ">21 March 2025</h3>
+            <!-- Card No 2 -->
+            <div
+              class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md"
+            >
+              <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">
+                CloudSync
+              </h4>
+              <h2 class="py-3 font-bold text-xl">Add Dark Mode</h2>
+              <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">
+                Store the user's preference localStorage, update CSS vari...
+              </p>
+              <hr class="border-b-1 border-dashed border-slate-400" />
+              <div class="flex justify-between items-center mt-5">
+                <div>
+                  <h5 class="text-gray-400">Deadline</h5>
+                  <h3 class="font-bold">21 March 2025</h3>
+                </div>
+                <button
+                  class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold"
+                >
+                  Completed
+                </button>
               </div>
-              <button class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold">Completed</button>
             </div>
-  
-          </div>
-          <!-- Card No 6 -->
-          <div class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md">
-            <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">ShopEase</h4>
-            <h2 class="py-3 font-bold text-xl">Fix Mobile Button Issue </h2>
-            <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">Debug using Chrome DevTools, check for overlapping...</p>
-            <hr class="border-b-1 border-dashed border-slate-400">
-            <div class="flex justify-between items-center mt-5">
-              <div>
-                <h5 class="text-gray-400">Deadline</h5>
-                <h3 class="font-bold ">21 March 2025</h3>
+            <!-- Card No 3 -->
+            <div
+              class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md"
+            >
+              <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">
+                SwiftPay
+              </h4>
+              <h2 class="py-3 font-bold text-xl">Optimize Home page </h2>
+              <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">
+                Debug using Chrome DevTools, check for overlappi...
+              </p>
+              <hr class="border-b-1 border-dashed border-slate-400" />
+              <div class="flex justify-between items-center mt-5">
+                <div>
+                  <h5 class="text-gray-400">Deadline</h5>
+                  <h3 class="font-bold">21 March 2025</h3>
+                </div>
+                <button
+                  class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold"
+                >
+                  Completed
+                </button>
               </div>
-              <button class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold">Completed</button>
             </div>
-  
-          </div>
-        </section>
+            <!-- Card No 4 -->
+            <div
+              class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md"
+            >
+              <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">
+                Meta
+              </h4>
+              <h2 class="py-3 font-bold text-xl">Add new emoji 🤲</h2>
+              <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">
+                Debug using Chrome DevTools, check for overlapping...
+              </p>
+              <hr class="border-b-1 border-dashed border-slate-400" />
+              <div class="flex justify-between items-center mt-5">
+                <div>
+                  <h5 class="text-gray-400">Deadline</h5>
+                  <h3 class="font-bold">21 March 2025</h3>
+                </div>
+                <button
+                  class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <!-- Card No 5 -->
+            <div
+              class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md"
+            >
+              <h4 class="w-[130px] bg-white p-2 rounded-xl text-center text-lg">
+                Google LLC
+              </h4>
+              <h2 class="py-3 font-bold text-xl">Integrate OpenAI API</h2>
+              <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">
+                Debug using Chrome DevTools, check for overlapping...
+              </p>
+              <hr class="border-b-1 border-dashed border-slate-400" />
+              <div class="flex justify-between items-center mt-5">
+                <div>
+                  <h5 class="text-gray-400">Deadline</h5>
+                  <h3 class="font-bold">21 March 2025</h3>
+                </div>
+                <button
+                  class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <!-- Card No 6 -->
+            <div
+              class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md"
+            >
+              <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">
+                Glassdoar
+              </h4>
+              <h2 class="py-3 font-bold text-xl">Improve Job searching</h2>
+              <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">
+                Debug using Chrome DevTools, check for overlapping...
+              </p>
+              <hr class="border-b-1 border-dashed border-slate-400" />
+              <div class="flex justify-between items-center mt-5">
+                <div>
+                  <h5 class="text-gray-400">Deadline</h5>
+                  <h3 class="font-bold">21 March 2025</h3>
+                </div>
+                <button
+                  class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </section>
         </section>
         <!-- Right side section -->
-        <section></section>
+        <section class="w-[350px] h-[918px] p-3 bg-white rounded-xl">
+          <!-- Title part and button -->
+          <div class="border-b-2 border-dashed border-gray-400 mb-5">
+            <h1 class="text-center font-semibold py-3 text-xl">
+              <i class="fa-solid fa-clock-rotate-left"></i> Activity Log
+            </h1>
+            <div class="grid place-items-center pb-5">
+              <button
+                class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold"
+              >
+                Clear History
+              </button>
+            </div>
+          </div>
+          <!-- History storage -->
+          <div
+            id="historyBox"
+            class="w-[318px] primary-BGcolor rounded-xl p-2"
+          ></div>
+        </section>
       </section>
     </main>
 
