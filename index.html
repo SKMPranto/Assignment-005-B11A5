@@ -62,7 +62,7 @@
               checked="checked"
               class="w-10 h-6 accent-[#3752FD]"
             />
-            <h3 class="text-2xl font-bold">23</h3>
+            <h3 id="completedTaskNum" class="text-2xl font-bold">23</h3>
           </div>
           <button id="btn-themeChanger" class="p-2 bg-slate-100 rounded-full">
             <img src="./assets/theme-btn.png" alt="Image" />
@@ -95,7 +95,7 @@
                 </div>
                 <div>
                   <p class="text-slate-500">Task Assigned</p>
-                  <h1 class="text-2xl font-bold">06</h1>
+                  <h1 class="text-2xl font-bold">0<span id="taskAssigned" >6</span> </h1>
                 </div>
               </div>
               <!-- Discover box -->
@@ -142,7 +142,7 @@
                   <h5 class="text-gray-400">Deadline</h5>
                   <h3 class="font-bold">21 March 2025</h3>
                 </div>
-                <button
+                <button id="btn-Completed"
                   class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold"
                 >
                   Completed
@@ -280,7 +280,7 @@
             </h1>
             <div class="grid place-items-center pb-5">
               <button
-                class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold"
+                class="btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold"
               >
                 Clear History
               </button>
@@ -299,5 +299,6 @@
     <script src="./scriptFiles/themeChenger.js"></script>
     <script src="./scriptFiles/indexToBlog.js"></script>
     <script src="./scriptFiles/blogToIndex.js"></script>
+    <script src="./scriptFiles/main.js"></script>
   </body>
 </html>
