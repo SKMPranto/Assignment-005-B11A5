@@ -95,7 +95,9 @@
                 </div>
                 <div>
                   <p class="text-slate-500">Task Assigned</p>
-                  <h1 class="text-2xl font-bold">0<span id="taskAssigned" >6</span> </h1>
+                  <h1 class="text-2xl font-bold">
+                    0<span id="taskAssigned">6</span>
+                  </h1>
                 </div>
               </div>
               <!-- Discover box -->
@@ -132,7 +134,7 @@
               <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">
                 ShopEase
               </h4>
-              <h2 class="py-3 font-bold text-xl">Fix Mobile Button Issue</h2>
+              <h2 class="py-3 font-bold text-xl cardTitle">Fix Mobile Button Issue</h2>
               <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">
                 Debug using Chrome DevTools, check for overlapping...
               </p>
@@ -142,7 +144,8 @@
                   <h5 class="text-gray-400">Deadline</h5>
                   <h3 class="font-bold">21 March 2025</h3>
                 </div>
-                <button id="btn-Completed"
+                <button
+                  id="btn-Completed"
                   class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold"
                 >
                   Completed
@@ -156,7 +159,7 @@
               <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">
                 CloudSync
               </h4>
-              <h2 class="py-3 font-bold text-xl">Add Dark Mode</h2>
+              <h2 class="cardTitle py-3 font-bold text-xl cardTitle">Add Dark Mode</h2>
               <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">
                 Store the user's preference localStorage, update CSS vari...
               </p>
@@ -180,7 +183,7 @@
               <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">
                 SwiftPay
               </h4>
-              <h2 class="py-3 font-bold text-xl">Optimize Home page </h2>
+              <h2 class="cardTitle py-3 font-bold text-xl cardTitle">Optimize Home page </h2>
               <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">
                 Debug using Chrome DevTools, check for overlappi...
               </p>
@@ -204,7 +207,7 @@
               <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">
                 Meta
               </h4>
-              <h2 class="py-3 font-bold text-xl">Add new emoji 🤲</h2>
+              <h2 class="v py-3 font-bold text-xl cardTitle">Add new emoji 🤲</h2>
               <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">
                 Debug using Chrome DevTools, check for overlapping...
               </p>
@@ -228,7 +231,7 @@
               <h4 class="w-[130px] bg-white p-2 rounded-xl text-center text-lg">
                 Google LLC
               </h4>
-              <h2 class="py-3 font-bold text-xl">Integrate OpenAI API</h2>
+              <h2 class="cardTitle py-3 font-bold text-xl cardTitle">Integrate OpenAI API</h2>
               <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">
                 Debug using Chrome DevTools, check for overlapping...
               </p>
@@ -252,7 +255,7 @@
               <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">
                 Glassdoar
               </h4>
-              <h2 class="py-3 font-bold text-xl">Improve Job searching</h2>
+              <h2 class="cardTitle py-3 font-bold text-xl cardTitle">Improve Job searching</h2>
               <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">
                 Debug using Chrome DevTools, check for overlapping...
               </p>
@@ -279,7 +282,7 @@
               <i class="fa-solid fa-clock-rotate-left"></i> Activity Log
             </h1>
             <div class="grid place-items-center pb-5">
-              <button
+              <button id="btnClearHistory"
                 class="btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold"
               >
                 Clear History
@@ -288,8 +291,7 @@
           </div>
           <!-- History storage -->
           <div
-            id="historyBox"
-            class="w-[318px] primary-BGcolor rounded-xl p-2"
+            id="historyContainer"
           ></div>
         </section>
       </section>
