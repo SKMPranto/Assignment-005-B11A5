@@ -67,8 +67,12 @@
     </header>
     <!-- Main Part -->
     <main class="xl:w-[80%] mx-auto bg-white rounded-xl">
+      <!-- main section -->
+      <section>
+        <!-- Left side section -->
+        <section>
       <!-- Task-bar and task-box section -->
-      <section class="p-3 w-[1146px]">
+      <section class="p-3 w-[1146px] border-b-2 border-dashed border-gray-400">
         <!-- Task-bar Container -->
         <div class="p-5 flex justify-arounditems-center gap-3">
           <!-- Task counter box -->
@@ -105,12 +109,109 @@
             <div class="">
               <img src="./assets/calender.png" alt="Image" />
             </div>
-            <div>
-              <p class="text-slate-500">Task Assigned</p>
-              <h1 class="text-2xl font-bold">06</h1>
+            <div id="dateBox">
+              <div id="currentWeekday" class="text-xl font-bold"></div>
+              <div id="currentDate" class="text-xl font-extrabold"></div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- Task card container -->
+        <section class="p-5 w-[1146px] grid grid-cols-3 gap-5">
+          <!-- Card No 1 -->
+          <div class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md">
+            <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">ShopEase</h4>
+            <h2 class="py-3 font-bold text-xl">Fix Mobile Button Issue </h2>
+            <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">Debug using Chrome DevTools, check for overlapping...</p>
+            <hr class="border-b-1 border-dashed border-slate-400">
+            <div class="flex justify-between items-center mt-5">
+              <div>
+                <h5 class="text-gray-400">Deadline</h5>
+                <h3 class="font-bold ">21 March 2025</h3>
+              </div>
+              <button class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold">Completed</button>
+            </div>
+  
+          </div>
+          <!-- Card No 2 -->
+          <div class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md">
+            <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">ShopEase</h4>
+            <h2 class="py-3 font-bold text-xl">Fix Mobile Button Issue </h2>
+            <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">Debug using Chrome DevTools, check for overlapping...</p>
+            <hr class="border-b-1 border-dashed border-slate-400">
+            <div class="flex justify-between items-center mt-5">
+              <div>
+                <h5 class="text-gray-400">Deadline</h5>
+                <h3 class="font-bold ">21 March 2025</h3>
+              </div>
+              <button class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold">Completed</button>
+            </div>
+  
+          </div>
+          <!-- Card No 3 -->
+          <div class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md">
+            <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">ShopEase</h4>
+            <h2 class="py-3 font-bold text-xl">Fix Mobile Button Issue </h2>
+            <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">Debug using Chrome DevTools, check for overlapping...</p>
+            <hr class="border-b-1 border-dashed border-slate-400">
+            <div class="flex justify-between items-center mt-5">
+              <div>
+                <h5 class="text-gray-400">Deadline</h5>
+                <h3 class="font-bold ">21 March 2025</h3>
+              </div>
+              <button class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold">Completed</button>
+            </div>
+  
+          </div>
+          <!-- Card No 4 -->
+          <div class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md">
+            <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">ShopEase</h4>
+            <h2 class="py-3 font-bold text-xl">Fix Mobile Button Issue </h2>
+            <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">Debug using Chrome DevTools, check for overlapping...</p>
+            <hr class="border-b-1 border-dashed border-slate-400">
+            <div class="flex justify-between items-center mt-5">
+              <div>
+                <h5 class="text-gray-400">Deadline</h5>
+                <h3 class="font-bold ">21 March 2025</h3>
+              </div>
+              <button class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold">Completed</button>
+            </div>
+  
+          </div>
+          <!-- Card No 5 -->
+          <div class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md">
+            <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">ShopEase</h4>
+            <h2 class="py-3 font-bold text-xl">Fix Mobile Button Issue </h2>
+            <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">Debug using Chrome DevTools, check for overlapping...</p>
+            <hr class="border-b-1 border-dashed border-slate-400">
+            <div class="flex justify-between items-center mt-5">
+              <div>
+                <h5 class="text-gray-400">Deadline</h5>
+                <h3 class="font-bold ">21 March 2025</h3>
+              </div>
+              <button class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold">Completed</button>
+            </div>
+  
+          </div>
+          <!-- Card No 6 -->
+          <div class="w-[342px] h-[300px] task-card p-5 rounded-xl primary-BGcolor shadow-md">
+            <h4 class="w-[114px] bg-white p-2 rounded-xl text-center text-lg">ShopEase</h4>
+            <h2 class="py-3 font-bold text-xl">Fix Mobile Button Issue </h2>
+            <p class="bg-white p-2 rounded-xl text-lg text-gray-500 mb-5">Debug using Chrome DevTools, check for overlapping...</p>
+            <hr class="border-b-1 border-dashed border-slate-400">
+            <div class="flex justify-between items-center mt-5">
+              <div>
+                <h5 class="text-gray-400">Deadline</h5>
+                <h3 class="font-bold ">21 March 2025</h3>
+              </div>
+              <button class="btn-Completed btn bg-[#3752FD] hover:bg-blue-700 text-white font-bold">Completed</button>
+            </div>
+  
+          </div>
+        </section>
+        </section>
+        <!-- Right side section -->
+        <section></section>
       </section>
     </main>
 
